@@ -2,10 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://yangzf.top/posts/</loc>
+    <lastmod>2026-01-14T16:52:57+08:00</lastmod>
+  </url><url>
+    <loc>https://yangzf.top/posts/test_post/</loc>
+    <lastmod>2026-01-14T16:52:57+08:00</lastmod>
+  </url><url>
+    <loc>https://yangzf.top/</loc>
+    <lastmod>2026-01-14T16:52:57+08:00</lastmod>
+  </url><url>
+    <loc>https://yangzf.top/posts/my-first-post/</loc>
+    <lastmod>2026-01-14T14:39:24+08:00</lastmod>
+  </url><url>
     <loc>https://yangzf.top/categories/</loc>
   </url><url>
     <loc>https://yangzf.top/tags/</loc>
-  </url><url>
-    <loc>https://yangzf.top/</loc>
   </url>
 </urlset>
