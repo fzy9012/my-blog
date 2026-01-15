@@ -2,3 +2,57 @@ baseURL = 'https://yangzf.top'
 languageCode = 'en-us'
 title = "Yang Zhifei's blogs"
 theme = "PaperMod"
+
+# 必须开启 JSON 输出，搜索功能才能工作
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[params]
+    # 基础设置
+    defaultTheme = "auto" # 跟随系统深色模式
+    ShowReadingTime = true # 显示阅读时长
+    ShowShareButtons = true # 显示分享按钮
+    ShowPostNavLinks = true # 显示上一篇/下一篇
+    ShowBreadCrumbs = true # 显示面包屑导航
+    ShowCodeCopyButtons = true # 代码块显示复制按钮
+    
+    # 社交链接 (Profile 下方)
+    [[params.socialIcons]]
+        name = "email"
+        url = "yang-zhifei@outlook.com"
+
+    # 搜索配置 (配合 outputs.JSON)
+    [params.fuseOpts]
+        isCaseSensitive = false
+        score = 0.5
+        limit = 10
+        keys = ["title", "content", "tags", "categories"]
+    
+    # 启用侧边栏
+    ShowToc = true
+    TocOpen = true
+
+# 7. 顶部导航栏 (Menu)
+[[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 10
+
+[[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 20
+
+[[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 25  # 在 Archives 和 Tags 之间
+
+[[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
