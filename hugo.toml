@@ -15,11 +15,23 @@ home = ["HTML", "RSS", "JSON"]
     ShowPostNavLinks = true # 显示上一篇/下一篇
     ShowBreadCrumbs = true # 显示面包屑导航
     ShowCodeCopyButtons = true # 代码块显示复制按钮
+
+    # 个人 Profile (显示在首页)
+    [params.homeInfoParams]
+        Title = "Hi"
     
     # 社交链接 (Profile 下方)
     [[params.socialIcons]]
         name = "email"
-        url = "yang-zhifei@outlook.com"
+        url = "mailto:yang-zhifei@outlook.com"
+    
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/fzy9012"
+    
+    [[params.socialIcons]]
+        name = "linkedin"
+        url = "https://www.linkedin.com/in/%E5%BF%97%E6%96%90-%E6%9D%A8-44989a221/"
 
     # 搜索配置 (配合 outputs.JSON)
     [params.fuseOpts]
